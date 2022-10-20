@@ -100,5 +100,3 @@ module.exports.post.apiDoc = {
         },
     },
 };
-
-

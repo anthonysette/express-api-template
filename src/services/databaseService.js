@@ -1,13 +1,15 @@
 const users = [
     {
-        id: 1,
-        name: "Anthony Sette",
-        email: ""
+        id: 0,
+        firstName: "Anthony",
+        lastName: "Sette",
+        email: "anthony@sparc.agency"
     },
     {
-        id: 2,
-        name: "John Doe",
-        email: ""
+        id: 1,
+        name: "John",
+        lastName: "Doe",
+        email: "john.doe@sparc.agency"
     },
 ];
 
@@ -24,8 +26,10 @@ const getUser = (uid) => {
 
 const createUser = (user) => {
     // You will call a database here
-    users.push(user);
-    return user;
+    const id = users.length;
+    const newUser = { id, ...user }
+    users.push(newUser);
+    return newUser;
 }
 
 module.exports = {

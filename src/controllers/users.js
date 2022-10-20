@@ -1,4 +1,4 @@
-import databaseService from '../services/databaseService';
+const databaseService = require('../services/databaseService');
 
 const getUsers = async (req, res, next) => {
     try {
@@ -28,7 +28,7 @@ const createUser = async (req, res, next) => {
     }
 }
 
-export default {
+module.exports = {
     getUsers,
     getUser,
     createUser

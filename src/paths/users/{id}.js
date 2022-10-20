@@ -1,6 +1,5 @@
 const controllers = require("../../controllers");
-const validate = require("../../middleware/validate");
-const { createOrUpdateUser } = require("../../validation/users");
+const authCheck = require("../../middleware/auth");
 
 module.exports = {
     // Get user by ID handler
@@ -51,71 +50,3 @@ module.exports.get.apiDoc = {
         },
     },
 };
-
-module.exports.put.apiDoc = {
-    summary: "Update User",
-    tags: ["Users"],
-    requestBody: {
-        content: {
-            "application/json": {
-                schema: {
-                    type: "object",
-                    properties: {
-                        firstName: {
-                            type: "string",
-                        },
-                        lastName: {
-                            type: "string",
-                        },
-                        email: {
-                            type: "string",
-                        },
-                        latitude: {
-                            type: "number",
-                        },
-                        longitude: {
-                            type: "number",
-                        },
-                    },
-                },
-            },
-        },
-    },
-    responses: {
-        200: {
-            description: "Success",
-            content: {
-                "application/json": {
-                    schema: {
-                        $ref: "#/components/schemas/User",
-                    },
-                },
-            },
-        },
-        400: {
-            $ref: "#/components/responses/400",
-        },
-        500: {
-            $ref: "#/components/responses/500",
-        },
-    },
-};
-
-module.exports.delete.apiDoc = {
-    summary: "Delete User",
-    tags: ["Users"],
-    responses: {
-        200: {
-            description: "User Deleted",
-        },
-        400: {
-            $ref: "#/components/responses/400",
-        },
-        500: {
-            $ref: "#/components/responses/500",
-        },
-    },
-};
-
-
-
