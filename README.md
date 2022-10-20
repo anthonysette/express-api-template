@@ -1,7 +1,7 @@
 # Express API Template
 
-This is Anthony Sette's preffered Express.js API Architecture. Try using this
-template on your next project!
+This is [Anthony Sette's](https://anthonysette.com) preffered Express.js API
+Architecture. Try using this template on your next project!
 
 ### File Structure
 
