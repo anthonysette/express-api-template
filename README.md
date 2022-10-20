@@ -3,6 +3,27 @@
 This is Anthony Sette's preffered Express.js API Architecture. Try using this
 template on your next project!
 
+### File Structure
+
+- src
+
+  - controllers
+  - db
+  - middleware
+  - models
+  - paths
+  - services
+  - utils
+  - validation
+
+- config.js
+- openapi.js
+- server.js
+- package.json
+- package-lock.json
+- README.md
+- .gitignore
+
 Every folder has its own `README.md` file with instructions. If you are looking
 for more guiodance check out this article I wrote about this project
 architecture
