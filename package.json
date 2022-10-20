@@ -1,0 +1,23 @@
+{
+  "name": "express-api-template",
+  "version": "1.0.0",
+  "description": "This is Anthony Sette's preffered Express.js API Architecture. Try using this template on your next project!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonysette"
+  },
+  "author": "Anthony Sette",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-openapi": "^12.0.2",
+    "express-validator": "^6.14.2",
+    "swagger-ui-express": "^4.5.0"
+  }
+}
