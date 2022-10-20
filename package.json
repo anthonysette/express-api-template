@@ -1,7 +1,7 @@
 {
   "name": "express-api-template",
   "version": "1.0.0",
-  "description": "This is Anthony Sette's preffered Express.js API Architecture. Try using this template on your next project!",
+  "description": "This is Anthony Sette's preferred Express.js API Architecture. Try using this template on your next project!",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
